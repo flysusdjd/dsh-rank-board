@@ -4,6 +4,10 @@
 
 `dsh-rank-board` 是一个 Cordis 插件（宿主端 + Web 客户端两半）：宿主拉取社区插件目录 [awesome-dsh-plugin](https://awesome-dsh-plugin.com/)，向 npm 官方 API 查询下载量并缓存，客户端把结果渲染在「设置 → 插件榜单」里。
 
+![插件榜单截图](docs/screenshot.png)
+
+_「设置 → 插件榜单」的实际界面：日榜 / 周榜 / 月榜切换，顶部显示抓取进度与限流提示。_
+
 ## 功能
 
 - **日榜 / 周榜 / 月榜**：同一批候选，按 `last-day`、`last-week`、`last-month` 三个口径分别排名。
