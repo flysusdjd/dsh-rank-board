@@ -1,0 +1,4 @@
+# dsh bundle patch: inserts the leaderboard plugin into a profile's layer stack.
+- insert:
+    - id: dsh-rank-board
+      name: 'dsh-rank-board'

@@ -1,0 +1,54 @@
+{
+  "name": "dsh-rank-board",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Plugin download leaderboard inside DeepSeek Harness — live install counts for every plugin in the community catalog.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "leaderboard",
+    "downloads"
+  ],
+  "license": "MIT",
+  "author": "flysusdjd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flysusdjd/dsh-rank-board.git"
+  },
+  "homepage": "https://github.com/flysusdjd/dsh-rank-board#readme",
+  "bugs": {
+    "url": "https://github.com/flysusdjd/dsh-rank-board/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml"
+  ],
+  "scripts": {
+    "check": "node --check lib/index.js && node --check client.js",
+    "test": "node --test test/plugin.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  }
+}

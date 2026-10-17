@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Local caches and release artifacts
+.dsh-rank-board/
+*.tgz
+*.log
+.gh-token
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
