@@ -24,6 +24,8 @@ _「设置 → 插件榜单」的实际界面：日榜 / 周榜 / 月榜切换�
 
 插件通过 GitHub Release 分发（暂未发布到 npm）。
 
+也可以在 DSH 的「设置 → 插件市场」中搜索 `dsh-rank-board` 一键安装。
+
 ### 方式一：GitHub Release（推荐）
 
 从 [Releases](https://github.com/flysusdjd/dsh-rank-board/releases) 复制对应版本的 `.tgz` 链接：
@@ -149,4 +151,4 @@ dsh-rank-board/
 
 ---
 
-**English**: `dsh-rank-board` is a Cordis plugin for DeepSeek Harness that ranks community plugins by real npm download counts (daily / weekly / monthly), rendered as a settings section. The host process crawls the awesome-dsh-plugin catalog and npm, caches boards on disk, and serves them on the local web port; the browser never calls npm directly. Install via the release tarball or from source, restart DSH, then open Settings → 插件榜单.
+**English**: `dsh-rank-board` is a Cordis plugin for DeepSeek Harness that ranks community plugins by real npm download counts (daily / weekly / monthly), rendered as a settings section. The host process crawls the awesome-dsh-plugin catalog and npm, caches boards on disk, and serves them on the local web port; the browser never calls npm directly. Install via the marketplace, release tarball or from source, restart DSH, then open Settings → 插件榜单.
